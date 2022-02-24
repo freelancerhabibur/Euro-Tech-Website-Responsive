@@ -1,0 +1,30 @@
+footer {
+    .footer-top {
+        background-color: rgba($color__blue, 0.9);
+        padding: 50px 0 30px;
+
+        .widget {
+            margin-bottom: 10px;
+            overflow: hidden;
+            p, a, address {
+                font-weight: 500;
+            }
+            .widget-ttitle {
+                margin-bottom: 20px;
+                font-weight: 600;
+            }
+
+            .links {
+                li {
+                    width: 50%;
+                    float: left;
+
+                    
+                }
+            }
+        }
+    }
+    .footer-bottom {
+        padding: 10px 0;
+    }
+}

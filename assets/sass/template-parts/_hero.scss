@@ -1,0 +1,24 @@
+.hero {
+    position: relative;
+    .hero-slider {
+        .slider-item {
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center center;
+            height: 400px;
+
+            @media (min-width: 425px) {
+                height: 500px;
+            }
+            @include md-devices {
+                height: 600px;
+            }
+            @include xl-devices {
+                height: 750px;
+            }
+            @include xxl-devices {
+                height: 850px;
+            }
+        }
+    }
+}

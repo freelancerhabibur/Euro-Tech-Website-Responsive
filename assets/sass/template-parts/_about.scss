@@ -1,0 +1,144 @@
+.about {
+    .intro-title {
+        padding: 20px 0;
+
+        @include sm-devices {
+            padding: 28px 0;
+        }
+
+        .title {
+            font-style: italic;
+            font-size: 16px;
+            font-weight: 500;
+
+            @media (min-width: 410px) {
+                font-size: 24px;
+            }
+            @include md-devices {
+                font-size: 28px;
+            }
+            @include lg-devices {
+                font-size: 36px;
+            }
+
+        }
+    }
+    .about-inner {
+        padding: 50px 0;
+
+        .section-img {
+            display: none;
+            @include lg-devices {
+                display: block;
+            }
+            @include xl-devices {
+                padding-right: 50px;
+            }
+        }
+        .section-content {
+            text-align: center;
+            max-width: 520px;
+            margin: 0 auto;
+
+            @include lg-devices {
+                text-align: left;
+            }
+            .title {
+                font-size: 20px;
+                font-weight: 500;
+                margin-bottom: 20px;
+
+                @include sm-devices {
+                    font-size: 26px;
+                }
+            }
+            p {
+                line-height: 1.6;
+                font-size: 15px;
+            }
+            .more-btn {
+                border: 2px solid $color__blue;
+                color: $color__blue;
+                padding: 6px 26px;
+                display: inline-block;
+                font-weight: 500;
+                font-size: 12px;
+                transition: all 0.3s;
+
+                @include sm-devices {
+                    padding: 10px 26px;
+                    font-size: 16px;
+                }
+
+                &:hover {
+                    background-color: $color__blue;
+                    color: $color__metalblack;
+                }
+            }
+        }
+
+        .mission-vision {
+            margin-top: 10px;
+            @include md-devices {
+                margin-top: 30px;
+            }
+            @include xxl-devices {
+                margin-top: -60px;
+                margin-left: 60px;
+            }
+
+            .d-flex {
+                flex-direction: column;
+
+                @include md-devices {
+                    flex-direction: row;
+                    justify-content: center;
+                }
+            }
+            .image {
+                background-color: $color__metalblack;
+                padding: 15px;
+                max-width: 360px;
+
+                @include xl-devices {
+                    max-width: 100%;
+                }
+            }
+            .content {
+                text-align: center;
+                max-width: 360px;
+                margin:  0 auto;
+
+                @include md-devices {
+                    text-align: left;
+                    margin: 0;
+                    padding-left: 20px; 
+                }
+                @include xl-devices {
+                    max-width: 100%;
+                    padding-left: 50px;                    
+                }
+
+                .mission + .vision {
+                    margin-top: 10px;
+                    @include lg-devices {
+                        margin-top: 30px;
+                    }
+                }
+                h4 {
+                    font-size: 22px;
+                }
+                p {
+                    line-height: 1.6;
+                    font-size: 15px;
+                    margin-top: 10px;
+
+                    a {
+                        color: $color__blue;
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+    }
+}

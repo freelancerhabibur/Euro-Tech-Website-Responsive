@@ -1,0 +1,71 @@
+.services {
+    padding: 60px 0;
+
+    .title {
+        font-size: 20px;
+        margin-bottom: 40px;
+        font-weight: 500;
+
+        @include sm-devices {
+            font-size: 26px;
+        }
+    }
+
+    .service-item {
+        img {
+            background-color: #e1e1e1;
+            padding: 15px;
+            transition: all 0.3s;
+        }
+        p {
+            background-color: #e1e1e1;
+            text-align: center;
+            padding: 10px 20px;
+            font-weight: 700;
+            margin: -24px 30px 0;
+            position: relative;
+            font-size: 12px;
+            z-index: 1;
+            transition: all 0.3s;
+
+            @include xxl-devices {
+                font-size: 14px;
+            }
+        }
+
+        &:hover {
+            img {
+                background-color: $color__blue;
+                padding: 8px;
+            }
+            p {
+                background-color: $color__blue;
+            }
+        }
+    }
+
+    .view-all {
+        text-align: center;
+        margin-top: 50px;
+
+        a {
+            border: 2px solid $color__blue;
+            color: $color__blue;
+            padding: 6px 35px;
+            display: inline-block;
+            font-weight: 500;
+            font-size: 12px;
+            transition: all 0.3s;
+
+            @include sm-devices {
+                padding: 10px 35px;
+                font-size: 14px;
+            }
+
+            &:hover {
+                background-color: $color__blue;
+                color: $color__metalblack;
+            }
+        }
+    }
+}
